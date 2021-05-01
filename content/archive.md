@@ -1,6 +1,7 @@
 ---
 title: "Blog Index"
-type: mycustomtype
+type: post
 layout: "single"
 ---
-This is the text in the body of the markdown post.
+
+{% for post in site.talks %} {% include archive.html %} {% endfor %}
